@@ -61,7 +61,7 @@ const cardsWon = []
 function createBoard (){
     for (let i = 0 ; i < cardArray.length; i++){
         const card = document.createElement('img')
-        card.setAttribute('src', 'images/blank.png')
+        card.setAttribute('src', 'images/pastel.jpg')
         card.setAttribute('data', i)
         card.addEventListener('click', flipCard)
         gridDisplay.append(card)
@@ -77,8 +77,8 @@ function checkMatch(){
     // console.log("check me")
 
     if (optionOne == optionTwo){
-        cards[optionOne].setAttribute('src', 'images./blank.png');
-        cards[optionTwo].setAttribute('src', 'images./blank.png');
+        cards[optionOne].setAttribute('src', 'images./pastel.jpg');
+        cards[optionTwo].setAttribute('src', 'images./pastel.jpg');
         alert("You clicked the same card!")
     }
 
@@ -92,8 +92,8 @@ function checkMatch(){
         cardsWon.push(cardsChosen)
     } 
     else{
-        cards[optionOne].setAttribute('src', 'images./blank.png');
-        cards[optionTwo].setAttribute('src', 'images./blank.png');
+        cards[optionOne].setAttribute('src', 'images./pastel.jpg');
+        cards[optionTwo].setAttribute('src', 'images./pastel.jpg');
         alert("No match")
     }
     resultDisplay.innerHTML = cardsWon.length

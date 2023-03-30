@@ -1,7 +1,8 @@
 #body{
     width: 600px;
     height: 400px;
-    background-color: red;
+    position: fixed;
+    margin-left: 35%;
 }
 
 
@@ -11,5 +12,4 @@
 flex-wrap: wrap;
 width: 400px;
 height: 300px;
-margin: 10px;
 }
